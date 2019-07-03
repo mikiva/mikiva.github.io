@@ -4,7 +4,7 @@ const windowHeight = 600;
 
 function setup() {
 
-	_createCanvas(windowWidth, windowHeight);
+	createCanvas(windowWidth, windowHeight);
 
 
 
