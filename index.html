@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>Mivar</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mivar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
 </head>
 <body>
-   
-   <h1>Mivar</h1>
-   <p>Hej och välkommen till min hemsida. Jag heter Mivar, jag kan inte stå till tjänst. Git out</p>
-   <img src="img.png">
-   
 
+<h1>Mivar</h1>
+<div class="main">
+    <div>
+
+        <p>Hej och välkommen till min hemsida. Jag heter Mivar, jag kan inte stå till tjänst.</p>
+        <img src="img.png">
+    </div>
+
+    <div class="content">
+
+
+        <iframe src="http://lavendel.me"></iframe>
+
+    </div>
+</div>
+<style>
+
+    html, body {
+        height: 100%;
+    }
+    .main {
+        display: flex;
+        height: 100%;
+
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    iframe:focus {
+        outline: none;
+    }
+
+    iframe[seamless] {
+        display: block;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border: none;
+    }
+
+</style>
 </body>
 </html>
