@@ -1,0 +1,104 @@
+
+.form {
+  text-align: center;
+  position: relative;
+  font-size: .9em;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+
+  &__container {
+    width: 500px;
+    //height: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+
+  }
+
+  &__row {
+    margin-bottom: 0.5em;
+  }
+
+  &--name {
+  }
+
+
+}
+
+.input {
+
+  background-color: transparent;
+  border-radius: 4px;
+  height: 40px;
+  border: 1px solid;
+  outline: 0;
+  padding: 0 24px;
+  width: 100%;
+  font-family: inherit;
+
+  &--gray {
+    border-color: #b5bbc0;
+    color: #b5bbc0;
+  }
+}
+
+.name {
+  font-family: inherit;
+
+  &__dropdown {
+    appearance: none;
+    border: none;
+    font-family: inherit;
+
+  }
+
+  &__letter {
+  }
+}
+
+.godkann-check {
+  margin: 1.5em 0;
+
+}
+
+.checking {
+  display: none;
+}
+
+.checkbox {
+  margin-right: 5px;
+  display: inline-block;
+  position: relative;
+
+  &__box {
+    color: #fff;
+    display: inline-block;
+    background-color: #3498db;
+    border: 1px solid #1a6190;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 18px;
+    position: relative;
+    width: 18px;
+    height: 18px;
+
+  }
+
+  &__check {
+
+    position: absolute;
+    right: 4px;
+    bottom: 1px;
+
+    &:before {
+      content: "x";
+    }
+
+  }
+  &__label {
+    display: inline-block;
+    font-size: 0.5em;
+  }
+}
