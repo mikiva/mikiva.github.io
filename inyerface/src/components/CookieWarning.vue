@@ -8,10 +8,10 @@
             <div class="align__cell">
                 <div class="align u-right">
                     <div class="align__cell">
-                        <button class="button button--cookie button--transparent" @click="hideBanner">Egentligen inte</button>
+                        <button class="button button--cookie button--transparent btn btn--secondary" @click="hideBanner">Egentligen inte</button>
                     </div>
                     <div class="align__cell">
-                        <button class="button button--cookie button--solid button--white">JA</button>
+                        <button class="button button--cookie button--solid button--white btn btn--primary">JA</button>
                     </div>
                 </div>
             </div>

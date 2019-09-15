@@ -16,7 +16,7 @@
                 <p>
                     Please
                     <u>click</u>
-                    <router-link class="start__link" :to="{name: 'form'}"> HERE</router-link>
+                    <router-link class="start__link" :to="{name: 'one'}"> HERE</router-link>
                     to GO to the
                     <span class="start__highlight">next page</span>
                 </p>

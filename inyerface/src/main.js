@@ -3,7 +3,11 @@ import App from './App.vue'
 import store from './store'
 import router from './router'
 
-Vue.config.productionTip = false
+//import formmixin from './mixins/formmixin';
+
+Vue.mixin(import('./mixins/formmixin'));
+
+Vue.config.productionTip = false;
 
 new Vue({
   store,

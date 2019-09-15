@@ -2,10 +2,15 @@
   box-sizing: border-box;
 }
 html {
-  background-color: #0c58da;
+ // background-color: #0c58da;
+
+  background: linear-gradient(120deg, #3498db, #8e44ad);
+  min-height: 100%;
+
 }
 
 body {
+
   font-family: "Comic Sans MS", sans-serif;
   margin: 0;
 }

@@ -1,0 +1,24 @@
+.modal-mask {
+  position: fixed;
+  z-index: 9990;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: center;
+}
+
+.modal-contaler {
+  width: 300px;
+  margin: 120px auto;
+
+  background-color: #fff;
+
+}

@@ -10,38 +10,31 @@
                         <p>Var vänlig fyll i ett namn</p>
                     </div>
                     <div class="form__row">
+                        <name-input/>
+
+                        <!--
                         <div class="align align--fluid">
                             <div class="align__cell">
+                                <label for="efternamn">Efternamn</label>
+                                <input class="input input--gray" placeholder="Efternamn" id="efternamn"
+                                       type="text"
+                                       v-model="q.lastname">
+                            </div>
+                            <div class="align__cell">
                                 <div class="align align--fluid">
-                                    <div class="align__cell">
-                                        <select class="name__dropdown" v-model="firstnameSelected">
-                                            <option v-for="letter in lettersInAlphabet">{{letter}}</option>
-                                        </select>
-                                    </div>
-                                    <div class="align__cell">
-                                        <button class="button button--right button--transparent" type="button"
-                                                @click="addFirstnameLetter"></button>
+                                    <div class="align__cell txtb">
+                                        <label for="fornamn">Förnamn</label>
+                                        <input class="input input--gray" id="fornamn" placeholder="Förnamn"
+                                               type="text"
+                                               v-model="q.firstname">
                                     </div>
                                 </div>
                             </div>
-                            <div class="align__cell">
-                                <input class="input input--gray" disabled placeholder="Förnamn" type="text"
-                                       v-model="q.firstname">
-                            </div>
-
                         </div>
+                        -->
                     </div>
                     <div class="form__row">
-                        <div class="align align--fluid surname">
-                            <div class="align__cell" v-for="(part, index) in q.surnameStart">
-                                <select class="name__dropdown align__cell" v-model="q.surnameStart[index]">
-                                    <option v-for="letter in lettersInAlphabet">{{letter}}
-                                    </option>
-                                </select>
-                            </div>
-                            <input class="align__cell name__end input input--gray" type="text"
-                                   v-model="q.surnameEnd"/>
-                        </div>
+
 
                     </div>
 
@@ -68,10 +61,11 @@
                     <div class="form__row">
                         <div class=" align align--fluid align--even">
                             <div class="align__cell">
-                                <button class="button button--transparent" type="button" @click="nextPage">Nästa</button>
+                                <button class="button button--transparent" type="button" @click="nextPage">Nästa
+                                </button>
                             </div>
                             <div class="align__cell">
-                                <button class="button" type="button"  @click="clearAll">Börja om</button>
+                                <button class="button" type="button" @click="clearAll">Börja om</button>
                             </div>
                             <div class="align__cell">
                                 <button class="button button--transparent" type="button" @click="clearAll">Återställ
@@ -86,15 +80,16 @@
 </template>
 
 <script>
+    import NameInput from "./NameInput";
     export default {
         name: "Name",
+        components: {NameInput},
         data() {
             return {
                 firstnameSelected: 'A',
                 q: {
                     firstname: "",
-                    surnameStart: ['J', 'A', 'N'],
-                    surnameEnd: "SSON"
+                    lastname: "",
                 },
                 lettersInAlphabet: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
                     'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Å', 'Ä', 'Ö'],
@@ -135,9 +130,8 @@
                 this.checked = !this.checked;
 
             },
-            nextPage: function()
-            {
-                this.$router.push({name: "finished"});
+            nextPage: function () {
+                this.$router.push({name: "two"});
             }
         }
     }

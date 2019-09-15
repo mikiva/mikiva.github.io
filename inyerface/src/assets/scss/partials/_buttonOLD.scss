@@ -1,0 +1,63 @@
+.button {
+
+  outline: none;
+  //  border: 1px solid;
+  border-radius: 4px;
+  cursor: default;
+  font-family: inherit;
+  font-size: .9em;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  padding: 1em 3.5em;
+
+  background-color: #0c58da;
+
+  &--cookie {
+    color: #000;
+    height: 56px;
+    margin-left: 20px;
+    line-height: 40px;
+    min-width: 140px;
+    padding: 0 24px;
+    border-radius: 0;
+  }
+
+  &--solid {
+    font-size: 24px;
+
+  }
+
+  &--transparent {
+
+
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0;
+    padding: 0;
+    color: #000;
+
+    &:active {
+
+    }
+
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &--right {
+
+    width: 44px;
+    height: 50px;
+    background-image: url("assets/img/arrow-right.svg");
+    background-repeat: no-repeat;
+
+
+    &:before {
+
+    }
+  }
+}
