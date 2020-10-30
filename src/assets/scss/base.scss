@@ -1,0 +1,73 @@
+body {
+  background-color: #17000c;
+  height: 100%;
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.home {
+  position: relative;
+  height: 100%;
+  top: -100px;
+}
+
+.hero-image {
+  top: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 50%;
+  max-width: $page-max-width;
+  background-image: url($moon-md);
+
+  @media screen and (min-width: $page-handheld-width) {
+    margin: 0 auto;
+    background-image: url($moon-lg);
+  }
+}
+.hero-text {
+  color: white;
+  .main {
+    position: relative;
+    top: 155px;
+    right: 80px;
+
+    h1 {
+      font-size: 35pt;
+    }
+    @media screen and (min-width: $page-handheld-width) {
+      top : 125px;
+      right: 100px;
+      h1{
+        
+        font-size: 55pt;
+        top: 60px;
+        right: 80px;
+      }
+      
+    }
+  }
+}
+
+#content {
+  height: 100%;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+
+  //max-width: 100%;
+
+  // background-image: url($moon-md);
+}
